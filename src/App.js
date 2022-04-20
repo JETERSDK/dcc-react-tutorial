@@ -17,14 +17,25 @@ function App() {
   
   
   return (
-    <div>
-      <DisplayEntries parentEntries={entries} />
-      <AddEntryForm addNewEntry={addNewEntry} />
-      <EntriesChartTracker parentEntries={entries} />
-      
+    <div className= 'container-fluid'>
+      <div className='row'>
+        <div className='col-md-6'>
+        </div>
+        <div className='col-md-6'>
+        <DisplayEntries parentEntries={entries} />
+        <AddEntryForm addNewEntry={addNewEntry} />
+        </div>
+           <EntriesChartTracker parentEntries={entries} />
+      </div>
+           <EntriesChartTracker parentEntries={entries} />
     
     </div>
   );
 }
 
 export default App;
+
+      
+     
+      
+    
